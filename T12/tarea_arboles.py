@@ -1,0 +1,65 @@
+class NodoArbol:
+    def __init__(self, value, left=None, right=None):
+        self.data = value
+        self.left = left
+        self.right = right
+
+print("------------ARBOL 1-----------")
+arbol_1 =NodoArbol("+", NodoArbol("-", NodoArbol(5), NodoArbol(4)), NodoArbol("*", NodoArbol(3), NodoArbol(2)))
+print("\nRecorrido Prefijo")
+print(arbol_1.data)
+print(arbol_1.left.data)
+print(arbol_1.left.left.data)
+print(arbol_1.left.right.data)
+print(arbol_1.right.data)
+print(arbol_1.right.left.data)
+print(arbol_1.right.right.data)
+
+print("\nRecorrido Postfijo")
+print(arbol_1.left.left.data)
+print(arbol_1.left.right.data)
+print(arbol_1.left.data)
+print(arbol_1.right.left.data)
+print(arbol_1.right.right.data)
+print(arbol_1.right.data)
+print(arbol_1.data)
+
+print("\nRecorrido Infijo")
+print(arbol_1.left.left.data)
+print(arbol_1.left.data)
+print(arbol_1.left.right.data)
+print(arbol_1.data)
+print(arbol_1.right.left.data)
+print(arbol_1.right.data)
+print(arbol_1.right.right.data)
+
+print("\n")
+
+print("------------ARBOL 2-----------")
+arbol_2=NodoArbol(40, NodoArbol(30, NodoArbol(25), NodoArbol(35)), NodoArbol(50, NodoArbol(45), NodoArbol(60)))
+print("\nRecorrido Prefijo")
+print(arbol_2.data)
+print(arbol_2.left.data)
+print(arbol_2.left.left.data)
+print(arbol_2.left.right.data)
+print(arbol_2.right.data)
+print(arbol_2.right.left.data)
+print(arbol_2.right.right.data)
+
+print("\nRecorrido Postfijo")
+print(arbol_2.left.left.data)
+print(arbol_2.left.right.data)
+print(arbol_2.left.data)
+print(arbol_2.right.left.data)
+print(arbol_2.right.right.data)
+print(arbol_2.right.data)
+print(arbol_2.data)
+
+print("\nRecorrido Infijo")
+print(arbol_2.left.left.data)
+print(arbol_2.left.data)
+print(arbol_2.left.right.data)
+print(arbol_2.data)
+print(arbol_2.right.left.data)
+print(arbol_2.right.data)
+print(arbol_2.right.right.data)

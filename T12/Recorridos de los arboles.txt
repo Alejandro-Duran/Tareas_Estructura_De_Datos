@@ -1,0 +1,20 @@
+ARBOL 1
+Orden Prefijo
++, -, 5, 4, *, 3, 2
+
+Orden Postfijo
+5, 4, -, 3, 2, *, +
+
+Orden Infijo
+5, -, 4, +, 3, *, 2
+
+
+ARBOL 2
+Orden Prefijo
+40, 30, 25, 35, 50, 45, 60
+
+Orden Postfijo
+25, 35, 30, 45, 60, 50, 40
+
+Orden Infijo
+25, 30, 35, 40, 45, 50, 60
